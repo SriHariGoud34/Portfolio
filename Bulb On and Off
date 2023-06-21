@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button{
+      padding: 5px;
+      margin: 10px;
+      background-color: black;
+      color: white;
+      border: none;
+    }
+    button:hover{
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>You Do Anything with js.</h1>
+  <h4>Note :- you need two similar images On and Off then you can achive it.</h4><hr>
+  <center><img src="https://tse4.mm.bing.net/th?id=OIP.maWRvjA73l5CT719MqvdSAHaHk&pid=Api&P=0&h=180" alt="bulboff" id="bulb" height="200px" widht="200px"/><br>
+  <button onclick="document.getElementById('bulb').src='https://tse4.mm.bing.net/th?id=OIP.maWRvjA73l5CT719MqvdSAHaHk&pid=Api&P=0&h=180'">Bulb Off</button>
+  <button onclick="document.getElementById('bulb').src='https://tse3.mm.bing.net/th?id=OIP.aYXfwVj0iuKYAo0nvTLTzAHaHw&pid=Api&P=0&h=180'">Bulb On</button>
+</center>
+</body>
+</html>
