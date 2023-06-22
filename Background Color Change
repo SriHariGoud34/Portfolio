@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background change</title>
+  <style>
+
+    /* box size */
+    div{
+      background-color: red;
+      height: 100px;
+      width:200px;
+     }
+   
+  </style>
+</head>
+<body>
+  
+  <div></div><br>
+  <select  onchange="bgcolor(this.value)">
+    <option value="red">Red</option>
+    <option value="Green">Green</option>
+    <option value="Black">Black</option>
+    <option value="gray">gray</option>
+  </select>
+
+
+
+  <script>
+    
+    box = document.querySelector("div");
+    function bgcolor(color){
+      box.style.background = color;
+    }
+  </script>
+</body>
+</html>
