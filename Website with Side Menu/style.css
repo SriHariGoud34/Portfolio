@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: -240px;
+    background: #1e1e1e;
+    height:100vh;
+    overflow-y: auto;
+    width: 240px;
+    float: left;
+    transition: all .3s;
+}
+
+ul li{
+    height: 65px;
+    outline: none;
+}
+ul li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 70px;
+    font-size: 20px;
+    color: white;
+    padding-left: 10%;
+    background: #1e1e1e;
+    border-top: 1px solid http://127.0.0.1:3000/index.html#Portfoliorgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    border-left: 5px solid transparent;
+}
+li a .contact {
+    border-bottom: 1px solid rgba(0,0,0,.5);
+}
+.active a{
+    color: #B93632;
+    border-left: 6px solid #B93632;
+    background: #1B1B1B;
+}
+.right{
+    float:right
+}
+.box::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+i {
+    position: fixed;
+    margin: 20px 25px;
+    font-size: 40px;
+    cursor: pointer;
+    color: orangered;
+}
+section {
+    margin-left: 0;
+    transition: all .3s;
+}
+.sec1 {
+    margin-left: -20px;
+    background: url(img/home.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sec2 {
+    margin-left: -20px;
+    background: url(img/about.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sec3 {
+    margin-left: -20px;
+    background: url(img/portfolio.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sec4 {
+    margin-left: -20px;
+    background: url(img/gallery.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sec5 {
+    margin-left: -20px;
+    background: url(img/sevices.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sec6 {
+    margin-left: -20px;
+    background: url(img/feedback.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sec7 {
+    margin-left: -20px;
+    background: url(img/contact.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h1 {
+    font-size: 40px;
+    padding: 15px 20px;
+}
+p {
+    padding: 0 20px 10px 20px;
+}
+.ul_show {
+    margin-left: 0px;
+}
+.slide_image {
+    margin-left: 260px;
+}
