@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav Menu Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(Document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            })
+        })
+    </script>
+</head>
+<body>
+    <nav>
+        <label class="logo">UpSkill</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    <section>
+
+    </section>
+</body>
+</html>
