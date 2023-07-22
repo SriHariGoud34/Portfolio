@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: gold;
+}
+.container {
+    width: 60%;
+}
+.container .wrapper {
+    min-width: 75px;
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 25px;
+    background: gold;
+    box-shadow: -3px -3px 7px #ffffff73,
+                2px 2px 5px rgba(94,104,121,0.288);
+}
+.wrapper .keys {
+    display: flex;
+    justify-content: center;
+}
+.wrapper .keys input {
+    height: 50px;
+    padding: 10px;
+    min-width: 50px;
+    outline: none;
+    border: none;
+    color: gold;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px gold,
+                2px 2px 5px gold;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.wrapper .keys input:active {
+    color: white;
+    font-size: 19px;
+    box-shadow: inset -3px -3px 7px goldenrod,
+                inset 2px 2px 5px goldenrod;
+
+
+}
+.wrapper .keys input[value="SPACE"] {
+    width: 60%;
+
+}
+.wrapper .display {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+.wrapper .display textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    resize: none;
+    font-size: 20px;
+    background: gold;
+    box-shadow: inset -3px -3px 7px #ffffff73,
+                inset 2px 2px 5px rgba(94,104,121,0.288);
+    pointer-events: none;
+    color: ghostwhite;
+}
