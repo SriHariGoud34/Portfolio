@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .clock{
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            min-height: 40px;
+            max-width: 300px;
+            background-color: aliceblue;
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+            border-radius: 20px;
+            line-height: 40px;
+            letter-spacing: 2px;
+        }
+        .clock:hover{
+            background-color: black;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        p{
+            color: white;
+            position: absolute;
+            top: 60%;
+            left: 45%;
+            display: flex;
+        }
+        p:hover{
+            color: limegreen;
+            cursor: pointer;
+        }
+       
+        .container{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="digital_clock" class="clock"></div>
+    <p>Time Right Now!</p>
+</div>
+    <script>
+    function showtime(){
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var session = "AM";
+        h = (h<10)? "0"+h : h;
+        m = (m<10)? "0"+m : m;
+        s = (s<10)? "0"+s : s;
+        if(h==0){
+            h = 12;  // 12 hours format
+        }
+        if(h>12){
+            h = h-12;
+            h = "0"+h;
+            session = "PM"
+        }
+
+        document.getElementById('digital_clock').innerHTML = h + " : " + m + " : "+ s + " "+session;
+        setTimeout(showtime,1000)
+    }
+showtime()
+    </script>
+</body>
+</html>
