@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url(/project4/images/developer.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.top_section{
+    color: #fff;
+    font-size: 35px;
+    max-width: 900px;
+   text-align: center;
+    position: relative;
+    top: 200px;
+    font-weight: bold;
+}
+.top_section h1{
+    text-transform: uppercase;
+}
+.small-text{
+    font-size: 25px;
+}
+.small-text:hover{
+    color: greenyellow;
+    font-size: 20pt;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.service{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: small;
+    padding: 40px;
+    font-size: 25px;
+}
+.sizebig{
+    font-size: 60px; 
+}
+.img_box{
+    max-width: 300px;
+    max-height: 450px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid;
+    text-align: center; 
+    box-shadow: 0px 0px 3px rgb(1, 1, 1);
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    
+}
+.content{
+    font-size: large;
+    color: grey;
+    margin-top: 15px;
+}
+h3{
+    margin-top: 20px;
+}
+.img_box:hover{
+    box-shadow: 0px 0px 15px rgb(76, 42, 42) ;
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+
+}
+.image img{
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 10px;
+}
+.image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+.left{
+    float: left;
+    width: 50%;
+    background-color: lightcoral;
+    padding: 20px;
+}
+.right{
+    background-color: rgba(23, 155, 23, 0.462);
+    padding: 20px;
+    width: 50%;
+    float: right;
+}
+
+
+.block::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.block{
+    width: 100%;
+    color: #fff;
+}
+.block h2{
+    padding: 20px;
+    text-align: center;
+
+}
+.footer{
+    background-color: black;
+    color: #fff;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+@media(max-width:500px) {
+    
+    .right,.left{
+        width: 100%;
+    }
+    
+}
+
+

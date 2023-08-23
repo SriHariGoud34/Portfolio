@@ -1,0 +1,85 @@
+html,
+body{
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    scroll-behavior: smooth;
+}
+.pimg1{
+   background-image: url("/project3/images/image1.jpg");
+   min-height: 100%;
+
+}
+.pimg2{
+    background-image: url("/project3/images/image2.jpg");
+    min-height: 400px;
+    position: fixed;
+}
+.pimg3{
+    background-image: url("/project3/images/image3.jpg");
+    min-height: 400px;
+}
+.pimg1,
+.pimg2,
+.pimg3{
+    
+   position: relative;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.ptext{
+    position:absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+.textBg{
+    background-color: #666;
+    padding: 20px;
+    border-radius: 4px;
+}
+.section{
+    padding: 50px 80px;
+    text-align: center;
+}
+.section-light{
+    background-color: #fff;
+    color: rgb(78, 18, 18);
+}
+.section-light h2{
+    text-transform: uppercase;
+}
+.section-dark{
+    background-color: #666;
+    color: #fff;
+    font-weight: bold;
+}
+.section-dark h2{
+    text-transform: uppercase;
+}
+.movetop a{
+    position: absolute;
+    color: white;
+    padding: 20px;
+    right: 0;
+    font-size: 20pt;
+}
+.textBg:hover{
+    background-color: white;
+    color: #666;
+}
+.ptext{
+    display: flex;
+    justify-content:center;
+}
