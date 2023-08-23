@@ -1,0 +1,270 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+nav button{
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: wheat;
+}
+
+nav a:hover {
+    border-bottom: 2px solid blanchedalmond;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Add styles for project cards and other elements as needed */
+.project-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    background-color: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.project-card a:hover {
+    background-color: #ddd;
+}
+ol li {
+    display: inline;
+    margin-bottom: 1rem;
+}
+
+div.gallery {
+    display: inline;
+    gap: 20px;
+    width: 200px;
+    margin: 20px auto;
+    height: 210px;
+    padding: 10px;
+    background-color: wheat;
+    border-radius: 10px;
+    transition: transform 0.3s linear;
+  }
+  
+  div.gallery:hover {
+    width: 220px;
+    box-shadow:5px 5px 10px lightgray;
+    height: 230px;
+    transform: scale(1.05);
+  }
+  
+  div.gallery a img {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    height: 100px;
+  }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+#resume a {
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left:10%;
+    text-decoration: none;
+    font-size: large;
+    display: flexbox;
+    margin-top: 50px;
+}
+#resume a:hover {
+    background-color: #fff;
+    color: #333;
+    border: none;
+}
+#resume button {
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    left:10%;
+    font-size: large;
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+}
+#resume button:hover {
+    background-color: #fff;
+    color: #333;
+    border: none;
+}
+div.btn {
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+}
+#mini_projects a {
+ text-decoration: none;
+ background-color: wheat;
+ color: #fff;
+ padding: 10px;
+ border-radius: 10px;
+ font-weight: bold;
+ margin: 10px;
+ display: flex;
+ transition: transform 0.3 sec linear;
+ max-width: 500px;
+ text-align: center;
+}
+
+#mini_projects a:hover {
+    transform: scale(1.05);
+    background-color: #ddd;
+    color: black;
+    box-shadow:5px 0px 5px white;
+}
+
+
+.contact a {
+    text-decoration: none;
+    color: red;
+}
+.contact a:hover {
+    color: greenyellow;
+    text-decoration: underline;
+}
+@media(max-width:720px) {
+     ul li {
+        display:block;
+        width: 100%;
+        gap: 10px; 
+        top:10px 
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    nav button {
+        display: inline;
+    }
+   
+    header nav ul {
+        display: block;
+        background-color: #333;
+        color:gold;
+        width: 100%;
+        display: none;
+        position: -webkit-sticky(30px);
+    }
+    header h1 {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+     header i {
+        width: 20%;
+       position: relative;
+       bottom: 40px;
+        float: right; 
+        color: #fff;  
+    }
+    header {
+        position: fixed;
+        z-index: 1;
+        
+    }
+    #about {
+        margin-top: 100px;
+    }
+   
+}
+@media(max-width:600px) {
+    #about {
+        margin-top: 150px;
+    }
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+

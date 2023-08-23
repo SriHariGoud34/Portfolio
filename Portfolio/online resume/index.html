@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="srihari34, myportfolio, resume34, online resume, ">
+    <meta name="google-site-verification" content="Ep816IUV05b3TjupLQ3fLBMfVLlgJ1g_xYkl9efg_BM" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+   $(Document).ready(function(){
+    $('#modeon').click(function(){
+        $("body").css({"background-color": "black","color":"white"})
+    })
+    $('#modeoff').click(function(){
+        $("body").css({"background-color": "white","color":"black"})
+    })
+    $('i').click(function(){
+        $('ul').slideToggle('slow')
+    })
+    $('a').click(function(){
+        ('i').hide()
+    })
+    $('.close').click(function(){
+        $('ul').slideUp('slow')
+    })
+   })
+    </script>
+</head>
+<body>
+  
+    <header>
+        
+        <h1>KANCHARLA SRI HARI</h1>
+        <nav>
+            <ul>
+                <li class="close"><a href="#about">About</a></li>
+                <li class="close"><a href="#projects">Projects</a></li>
+                <li class="close"><a href="#certifications">Certifications</a></li>
+                <li class="close"><a href="#contact">Contact</a></li>
+                <li id="modeon"><button>Dark Mode</button></li>
+                <li id="modeoff"><button>Light Mode</button></li>
+               
+            </ul>
+        </nav>
+        
+        <i class="fa-solid fa-bars"></i>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am passionate about front-end development because it allows me to combine both my technical abilities and creativity to craft engaging and user-friendly experiences on the web.
+                I take pleasure in staying up-to-date with the latest trends and best practices in front-end technologies, including HTML, CSS, JavaScript, and various frameworks like React or Jquary. My goal is to make the web more accessible, intuitive, and visually appealing for users across different devices and platforms.
+            </p>
+        </section>
+        <section id="resume">
+            <div class="btn">
+           <a href="resume.pdf" download="srihari(resume)">Download Resume
+            <i class="fa-solid fa-download"></i>
+           </a>
+           <button onclick="document.location='https://github.com/SriHariGoud34?tab=repositories'">Git Hub</button>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Add your project cards here -->
+            <div class="project-card">
+                <h3>Responsive Web Page With Side Menu</h3>
+                <p>Responsive Web Page with side menu using html css and javascript.</p>
+                <a href="https://responsivesidemenu.netlify.app/" target="_blank">Live Demo</a>
+                <a href="https://github.com/SriHariGoud34/Portfolio/tree/main/Responsive%20Navigation%20Menu%20Bar%20Using%20HTML%2CCSS%26JavaScript" target="_blank">Source Code</a>
+            </div>
+            <!-- Add more project cards as needed -->
+            <div class="project-card">
+                <h3>Responsive Filterable Image Gallery</h3>
+                <p>Responsive Filterable Image Gallery using html css and javascript.</p>
+                <a href="https://shoppingapp34.netlify.app/" target="_blank">Live Demo</a>
+                <a href="https://github.com/SriHariGoud34/Portfolio/tree/main/Filterable%20image%20gallery" target="_blank">Source Code</a>
+            </div>
+            <div class="project-card">
+                <h3>Image Gallery With Search Box</h3>
+                <p>Responsive Image Gallery With Search Box using html css and javascript.</p>
+                <a href="https://sriharimoviefilterproject.netlify.app/" target="_blank">Live Demo</a>
+                <a href="https://github.com/SriHariGoud34/Portfolio/tree/main/image%20gallery%20with%20search%20box" target="_blank">Source Code</a>
+            </div>
+        </section>
+        <section id="mini_projects">
+            <div class="mini">
+            <h2>Mini Projects</h2><br>
+            <a href="https://calculatorpro34.netlify.app/" target="_blank">Calculator</a>
+            <a href="https://digitalclock34.netlify.app/" target="_blank">Digital Clock</a>
+            <a href="https://numberincrementdecrement.netlify.app/" target="_blank">Number Increment&Decrement</a>
+            <a href="https://sriharikeyboardtype.netlify.app/" target="_blank">KeyBoard</a>
+            <a href="https://github.com/SriHariGoud34/Portfolio/blob/main/Background%20Color%20Change" target="_blank">background Color change</a>
+            <a href="https://github.com/SriHariGoud34/Portfolio/blob/main/Bulb%20Turn%20On%20and%20Off" target="_blank">Bulb On/Off</a>
+            </div>
+        </section>
+        <section id="certifications">
+            <h1>Skills</h1><br>
+            <ol>
+                <li>HTML - </li>
+                <li>CSS - </li>
+                <li>Bootstrap - </li>
+               <li>JavaScript - </li>  
+                <li>Jquary - </li>
+                <li>React Js - </li>
+                <li>Node Js - </li>
+                <li>Python - </li>
+                <li>MySQL - </li>
+                <li>Git Hub</li>
+            </ol><br>
+            <h1>Certifications</h1><br>
+        <div class="container">
+            <div class="gallery">
+                <a target="_blank" href="python.jpeg">
+                  <img src="python.jpeg" alt="python" width="600" height="400">
+                </a>
+                <div class="desc">Python Certificate from Internshala  </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="sql certificate.jpg">
+                  <img src="sql certificate.jpg" alt="sql" width="600" height="400">
+                </a>
+                <div class="desc">SQL from Udemy</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="css.png">
+                  <img src="css.png" alt="css" width="600" height="400">
+                </a>
+                <div class="desc">CSS from CodeLiber</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="javascript.png">
+                  <img src="javascript.png" alt="js" width="600" height="400">
+                </a>
+                <div class="desc">JavaScript from Great Learning</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="ml.png">
+                  <img src="ml.png" alt="css" width="600" height="400">
+                </a>
+                <div class="desc">Machine Learning from YBL Foundation</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="Data Analysis.jpeg">
+                  <img src="Data Analysis.jpeg" alt="css" width="600" height="400">
+                </a>
+                <div class="desc">Data Analysis from Coursera</div>
+            </div>
+        </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="contact">
+                You can reach me at: <a href="mailto:sriharigoud287@email.com" target="_blank">Gmail</a>, <a href="tel:9347340948" target="_blank">Phone</a>, <a href="https://www.linkedin.com/in/sri-hari-goud-b47728245/" target="_blank">LinkedIn</a>
+                <p>Gmail : sriharigoud287@gmail.com</p>
+                <p>Mobile Number : 9347340948</p>
+                <p>LinkedIn Id : Sri Hari Goud</p>
+            </p>
+        </section>
+    </main>
+   
+    <footer>
+        <p>&copy; 2023 Sri Hari. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
