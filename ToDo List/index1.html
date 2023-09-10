@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        .container{
+          width: 40%;
+          min-width: 350px;
+          background: #fff;
+          max-height: 100%;
+          border-radius: 10px;
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        }
+        #newtask{
+            position: relative;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #taskinfo{
+            width: 75%;
+            height: 35px;
+            border: 2px solid #d1d3d8;
+            padding-left: 5px;
+            font-weight: 400;
+            color: #111115;
+            border-radius: 6px;
+        }
+        #taskinfo:focus{
+            outline: none;
+            border-color: #1a5aa2;
+        }
+        #add{
+            background: blueviolet;
+            color: #fff;
+            border-radius: 5px;
+            height: 35px;
+            width: 20%;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        #addlist{
+            margin-bottom: 9px;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .task{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #c5e1c6;
+            margin-bottom: 9px;
+            padding: 5px 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #939697;
+        }
+        .del{
+            color: #d11a2a;
+            border-radius: 5px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div id="newtask">
+                <input type="text" placeholder=" Enter your " id="taskinfo">
+                <button id="add">Add</button>
+            </div>
+            <div id="addlist"></div>
+    </div>
+
+
+    <script>
+        let todoele = document.getElementById('taskinfo')
+        let tasklist = document.getElementById('addlist')
+
+
+        document.getElementById('add').onclick = function(){
+            if(todoele.value.length == 0){
+                alert("enter a task")
+            }else{
+                tasklist.innerHTML = tasklist.innerHTML+`
+                <div class = "task">
+                    <span id="work">${todoele.value}</span>
+                    <button class="del"><i class="fa-solid fa-trash"></i></button>
+                </div>`
+
+
+                let alltask = document.querySelectorAll('.del') 
+                for(i=0;i<alltask.length;i++){
+                    alltask[i].onclick = function(){
+                        this.parentNode.remove()
+                    }
+                } 
+                todoele.value=""
+                
+            }  
+        }
+
+
+    </script>
+</body>
+</html>
