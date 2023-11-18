@@ -1,0 +1,342 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 0.5rem;
+    overflow-x: hidden;
+}
+:root{
+    --min-color: #eee;
+    --sc-color: rgb(225, 187, 0);
+    --th-color: rgb(134,102,12);
+}
+body{
+    background: rgb(24,24,24);
+}
+.btn{
+    display: inline-block;
+    padding: 0.6rem 2.5rem;
+    font-size: 1.2rem;
+    border: 0; outline: 0;
+    background: var(--th-color);
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+.btn:hover{
+    background: none;
+    border: 0.1rem solid var(--sc-color);
+    color: var(--sc-color);
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    font-size: 2.5rem;
+    color: var(--min-color);
+    text-align: center;
+    margin: 3rem;
+}
+.heading span{
+    color: var(--sc-color);
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 9% ;
+    border-bottom: 0.1rem solid var(--min-color);
+    z-index: 1001;
+}
+header .logo{
+    color: var(--min-color);
+    padding: 0.4rem;
+    font-size: 2.4rem;
+}
+header .logo img{
+    width: 2.5rem;
+}
+header .navbar a{
+    margin: 0 0.2rem;
+    font-size: 1.2rem;
+    color: var(--min-color);
+    padding: 0.4rem 0.7rem;
+    border-radius: 0.4rem; 
+}
+header .navbar a:hover{
+    color: #fff;
+    border: 0.1rem solid var(--sc-color);
+    background: var(--sc-color);
+}
+header .bar{
+    font-size: 1.5rem;
+    color: var(--min-color);
+    cursor: pointer;
+    display: none;
+}
+header .bar:hover{
+    color: var(--sc-color);
+}
+.home{
+    margin: 0.8rem;
+    padding: 0 9%;
+    
+}
+.home .home-container .slid{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 13rem;
+    gap: 1rem;
+}
+.home .home-container .slid .content{
+    flex-direction: 1 1 45%;
+}
+.home .home-container .slid .image{
+    flex-direction: 1 1 45%;
+}
+.home .home-container .slid .image img{
+    width: 100%;
+}
+.home .home-container .slid .content span{
+    font-size: 2.5rem;
+    color: var(--sc-color);
+}
+.home .home-container .slid .content p{
+    color: var(--min-color);
+    font-size: 1.2rem;
+    margin: 0.8rem 0;
+}
+.speciality{
+    background: #000;
+    margin: 4rem 0;
+}
+.speciality .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    gap: 1.2rem;
+}
+.speciality .row .box{
+    background: #fff;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.speciality .row .box img{
+    width: 100%;
+    object-fit: contain;
+}
+.speciality .row .box .content{
+    padding: 1rem 0.8rem;
+    text-align: center;
+}
+.speciality .row .box .content h3{
+    font-size: 1.5rem;
+}
+.speciality .row .box .content p{
+    font-size: 1.2rem;
+}
+.speciality .row .box .content .stars{
+    text-align: center;
+    color: var(--sc-color);
+    font-size: 1.2rem;
+}
+.speciality .row .box .content .stars i{
+    margin: 0.5rem 0;
+
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #000;
+    gap: 1.5rem;
+}
+.about .row .image img{
+    width: 24rem;
+    padding: 1rem;
+    object-fit: cover;
+}
+.about .row .content{
+    width: 25rem;
+    background: var(--min-color);
+    text-align: center;
+    height: 25rem;
+    padding: 0.8rem;
+}
+.about .row .content h3{
+    font-size: 2rem;
+    margin: 1rem;
+    color: var(--sc-color);
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    margin: 0.8rem;
+}
+.popular .popular-slider{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    
+}
+.popular .popular-slider .box{
+    margin: 1rem;
+    text-align: center;
+    width: 28%;
+}
+.popular .popular-slider .box img{
+    width: 100%;
+}
+.gallery{
+    background: #000;
+
+}
+.gallery .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    
+}
+.gallery .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.gallery .box-container .box img:hover{
+    transform: scale(1.1);
+}
+.order .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.order .row .image{
+    width: 40rem;
+}
+.order .row .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.order .row form{
+    width: 40rem;
+}
+.order .row form .inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.order .row form .inputbox input ,
+.order .row form textarea{
+    padding: 0.3rem 0.8rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #333;
+    text-transform: none;
+    border: 0.1rem solid var(--min-color);
+    border-radius: 0.5rem;
+    width: 49%;
+}
+.order .row form textarea{
+    width: 100%;
+    height: 16rem;
+    resize: none;
+}
+.footer{
+    background: #000;
+}
+.footer .box-containr{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.footer .box-containr .box h3{
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    color: var(--min-color);
+}
+.footer .box-containr .box a{
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: var(--min-color);
+}
+.footer .box-containr .box a:hover{
+    color: var(--sc-color);
+    text-decoration: underline;
+    padding-left: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media(max-width:750px){
+    html{
+        font-size: 57%;
+    }
+    header .bar{
+    
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        /*  */ top: 1000rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background: var(--min-color);
+        background: rgb(212, 212, 212);
+        
+    }
+    header .navbar.active{
+        top: 5rem;
+    }
+    header .navbar a{
+        display: block;
+        margin: 0.3rem 0;
+        padding: 1rem;
+        font-size: 2.5rem;
+        color: #000;
+        
+    }
+    .about .row{
+        flex-flow: column;
+        width: 90%;
+    }
+    .about .row .image img{
+        width: 100%;
+    }
+    .about .row .content{
+        width: 100%;
+    }
+
+}
