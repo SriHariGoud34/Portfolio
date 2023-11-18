@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --primary: #353d47;
+    --secondary: #111111;
+    --light: #fff;
+    --dark: #05254d;
+    --read: #ed1c24;
+
+}
+html{
+    font-size: 60%;
+}
+section{
+    padding: 9rem 6%;
+}
+.btn{
+    display: inline-block;
+    padding: 0.6rem 2.5rem;
+    font-size: 2rem;
+    /* border: 0.1rem solid var(--light); */
+    outline: 0;
+    background: var(--light);
+    cursor: pointer;
+    text-align: center;
+    color: var(--dark);
+}
+.btn:hover{
+    color: var(--light);
+    background: var(--read);
+}
+.btn-2{
+    display: inline-block;
+    padding: 0.6rem 2.5rem;
+    font-size: 2rem;
+    outline: 0;
+    background: var(--dark);
+    cursor: pointer;
+    text-align: center;
+    color: var(--light);
+}
+.btn-2:hover{
+    color: var(--light);
+    background: var(--read);
+}
+section{
+    padding: 4rem 6%;
+}   
+.home{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    /* position: relative;   */
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+.home .content{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.home .content h2{
+    color: var(--light);
+    font-size: 8rem;
+}
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10rem;
+    background: var(--read);
+    z-index: 1001;
+    
+}
+.header .navbar a{
+    font-size: 2rem;
+    color: var(--light);
+    padding: 0.8rem 1.1rem;
+}
+.header .navbar a:hover{
+    color: var(--primary);
+
+}
+.header .logo {
+    font-size: 3rem;
+    color: var(--light);
+    font-weight: bold;
+}
+.header .images img{
+    position: absolute;
+    top: 8.4rem;
+    left: 44%;
+}
+.about .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-shadow: 3px 0 62px rgb(13 3 3 / 18%);
+    border-radius: 60px;
+    padding: 2rem 5rem;
+    position: relative;
+    margin-top: -130px;
+    background-color: var(--light);
+}
+.about .images{
+    width: 44%;
+}
+.about .images img{
+    width: 100%;
+    object-fit: cover;
+}
+.about .content{
+    width: 40%; 
+}
+.about .content h1{
+    font-size: 3.5rem;
+}
+.about .content p{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+.about .row{
+    margin: 11rem 0;
+}
+.about .row .col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.about .row .col .images{
+    width: 65%; 
+}
+.about .row .col .images img{
+    width: 100%; 
+} 
+.protect .heading{
+    text-align: center;
+    margin: 5rem auto;
+} 
+.protect .heading h1{
+    font-size: 5rem;
+    color: var(--dark);
+}
+.protect .heading p{
+    font-size: 2.2rem;
+    color: var(--primary);
+    padding: 1.5rem 0;
+}
+.protect .row{
+    background: url(../images/cases2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60rem;
+
+}
+.protect .row .col{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    padding: 2rem;
+    gap: 1rem;
+}
+.protect .row .col .box{
+    background-color: var(--light);
+    padding: 2rem;
+}
+.protect .row .col .box img{
+    width: 30%;
+    object-fit: cover;
+}
+.protect .row .col .box .content h1{
+    font-size: 2.7rem;
+    color: var(--dark);
+    margin: 1rem 0;
+}
+.protect .row .col .box .content p{
+    font-size: 1.8rem;
+    color: var(--primary);
+    padding: 0.8rem ;
+   
+}
+.coronavirus .heading{
+    text-align: center;
+    margin: 5rem auto;
+} 
+.coronavirus .heading h1{
+    font-size: 5rem;
+    color: var(--dark);
+}
+.coronavirus .heading p{
+    font-size: 2.2rem;
+    color: var(--primary);
+    padding: 1.5rem 0;
+}
+.coronavirus .box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    padding: 2rem;
+    gap: 1rem;
+}
+.coronavirus .box .col .images img{
+    width: 100%;
+    object-fit: cover;
+}
+.coronavirus .box .col{
+    background: #fff;
+    padding: 25px 25px 0px 25px;
+    box-shadow: 3px 0 62px rgb(13 3 3 / 20%);
+    text-align: center;
+}
+.coronavirus .box .col .content h1{
+    font-size: 32px;
+    color: var(--dark);
+    margin: 10px 0;
+
+}
+.coronavirus .box .col .content p{
+    font-size: 18px;
+    color: var(--primary);
+    margin: 10px 0;
+
+}
+.coronavirus .box .col .im{
+    position: relative;
+    bottom: -50px;
+}
+.say .heading{
+    text-align: center;
+    margin: 5rem auto;
+} 
+.say .heading h1{
+    font-size: 5rem;
+    color: var(--dark);
+}
+.say .row{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 2rem;
+}
+.say .row .box{
+    background: #fff;
+    padding: 2rem 4rem;
+    box-shadow: 3px 0 62px rgb(13 3 3 / 20%);
+    text-align: center;
+    
+}
+.say .row .box .images img{
+    border-radius: 50%;
+    position: relative;
+    top: -80px;
+}
+.say .row .box h1{
+    font-size: 2.5rem;
+    color: var(--dark);
+}
+.say .row .box p{
+    font-size: 2.2rem;
+    color: var(--primary);
+    padding: 2rem 1rem;
+}
+.update{
+    background: url(../images/cases2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0;
+    
+}
+.update input{
+    width: 55%;
+    height: 35px;
+    padding: 10px 15px;
+    margin: 2rem 0;
+    font-size: 15px;
+}
+.update input[type="submit"]{
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 25px;
+    width: 20%;
+    height: 60px;
+    cursor: pointer;
+}
+.update input[type="submit"]:hover{
+    background: var(--read);
+}
+.footer{
+    background-color: var(--read);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
+    gap: 2rem;
+    text-align: center;
+    padding: 4rem;
+    margin-top: 6rem;
+}
+.footer h3{
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: var(--dark);
+}
+.footer p{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: var(--light);
+}
+.footer i{
+    font-size: 2.8rem;
+    margin: 1rem 0.5rem;
+    color: var(--secondary);
+}
+.footer i:hover,
+.footer a:hover{
+    color: var(--secondary);
+}
+.footer a{
+    display: block;
+    font-size: 1.8rem;
+    margin: 0.5rem;
+    color: var(--light);
+}
+.footer input{
+    background: none;
+    border: 0.1rem solid var(--light);
+    padding: .8rem ;
+    color: var(--light);
+    font-size: 1.5rem;
+}
+.footer label{
+    background: var(--secondary);
+    font-size: 1.5rem;
+    color: var(--light);
+    padding: 0.8rem;
+   cursor: pointer;
+}
