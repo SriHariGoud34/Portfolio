@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3494E6, #EC6EAD);
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1, label {
+    color: #333;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#roadmap-section {
+    margin-top: 20px;
+}
+
+#roadmap-content,
+.code {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+#roadmap-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#html-code, #css-code, #js-code {
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    select {
+        width: 100%;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Roadmap Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Roadmap Generator</h1>
+        <label for="career-path">Select Career Path:</label>
+        <select id="career-path" onchange="generateContent()">
+            <option value="select-career-path">Select Career Path</option>
+            <option value="web-development">Web Development</option>
+            <option value="full-stack">Full Stack Development</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="data-analyst">Data Analyst</option>
+            <option value="data-scientist">Data Scientist</option>
+            <option value="machine-learning">Machine Learning</option>
+            <option value="backend-developer">Backend Development</option>
+            <option value="ai">Artificial Intelligence (AI)</option>
+            <option value="ux-ui-design">UX/UI Design</option>
+            <!-- Add more career paths as needed -->
+        </select>
+        <div id="roadmap-section">
+            <h2>Roadmap:</h2>
+            <div id="roadmap-content"></div>
+            <!-- <h2>Your Code:</h2>
+            <div id="html-code" class="code"></div>
+            <div id="css-code" class="code"></div>
+            <div id="js-code" class="code"></div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
